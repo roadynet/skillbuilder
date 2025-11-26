@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Home-Seite</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    <p>Willkommen in deinem Symfony-Lernprojekt, {{ username }}.</p>
+
+    <h2>Heutige Lernschritte:</h2>
+    <ul>
+        {% for step in steps %}
+            <li>{{ step }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
